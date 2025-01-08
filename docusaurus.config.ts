@@ -15,6 +15,7 @@ const config: Config = {
   // GitHub pages deployment config.
   organizationName: 'aloong-planet',
   projectName: 'aloong-docs',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -64,7 +65,7 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/api-docs', label: 'API Documentation', position: 'left'},
+        {to: '/api-docs', label: 'APIs', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/aloong-planet',

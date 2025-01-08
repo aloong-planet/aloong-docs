@@ -1,0 +1,31 @@
+.apiTabs {
+  display: flex;
+  gap: 1px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.apiTab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  color: #666;
+}
+
+.apiTab.active {
+  color: var(--ifm-color-primary);
+  border-bottom: 2px solid var(--ifm-color-primary);
+}
+
+.apiTab:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* Add styles for Swagger UI version text */
+:global(.swagger-ui .info pre.version) {
+  color: #000000 !important;
+  background-color: transparent;
+} 
