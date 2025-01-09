@@ -56,7 +56,7 @@ const config: Config = {
       title: 'Aloong Planet',
       logo: {
         alt: 'Aloong Planet Logo',
-        src: 'img/logo.svg',
+        src: 'img/favicon.ico',
       },
       items: [
         {
@@ -65,7 +65,21 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/api-docs', label: 'APIs', position: 'left'},
+        {
+          type: 'dropdown',
+          label: 'APIs',
+          position: 'left',
+          items: [
+            {
+              label: 'FastAPI Backend',
+              to: '/api-docs/fastapi',
+            },
+            {
+              label: 'LLM Streaming Service',
+              to: '/api-docs/llm',
+            },
+          ],
+        },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/aloong-planet',
