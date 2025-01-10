@@ -27,21 +27,17 @@ export default function ApiDocsLayout({ currentPath, children }: ApiDocsLayoutPr
   const {siteConfig} = useDocusaurusContext();
   const baseUrl = siteConfig.baseUrl;
 
-  const handleTabChange = (path: string) => {
-    history.push(`${baseUrl}api-docs/${path}`);
-  };
-
   return (
     <Layout
       title="API Documentation"
       description="API Documentation for Aloong Planet services">
-      <main style={{ padding: '20px' }}>
+      <main className={styles.mainContent}>
         <div className={styles.apiTabs}>
           {apiSpecs.map((spec) => (
             <button
               key={spec.path}
               className={`${styles.apiTab} ${spec.path === currentPath ? styles.active : ''}`}
-              onClick={() => handleTabChange(spec.path)}
+              onClick={() => history.push(`${baseUrl}api-docs/${spec.path}`)}
             >
               {spec.name}
             </button>

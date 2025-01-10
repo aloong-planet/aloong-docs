@@ -63,7 +63,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'Docs',
         },
         {
           type: 'dropdown',
@@ -79,6 +79,12 @@ const config: Config = {
               to: '/api-docs/llm',
             },
           ],
+        },
+        {
+          type: 'doc',
+          docId: 'github-actions',
+          position: 'left',
+          label: 'Actions',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {

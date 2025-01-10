@@ -23,7 +23,8 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "swagger-ui-react": "^5.18.2"
+    "swagger-ui-react": "^5.18.2",
+    "framer-motion": "^10.16.16"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.7.0",
