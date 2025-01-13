@@ -8,7 +8,7 @@
   display: flex;
   gap: 1px;
   margin-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(2, 152, 77, 0.803);;
 }
 
 .apiTab {
@@ -18,17 +18,17 @@
   border: none;
   border-bottom: 2px solid transparent;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(2, 152, 77, 0.803);
   transition: all 0.3s ease;
 }
 
 .apiTab.active {
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+  color: rgba(2, 152, 77, 1);;
+  border-bottom: 2px solid #2e8555;
 }
 
 .apiTab:hover {
-  color: #ffffff;
+  color: rgba(2, 152, 77, 0.803);;
 }
 
 /* Add styles for Swagger UI version text */
