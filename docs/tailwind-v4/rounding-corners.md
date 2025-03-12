@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: Rounding Corners
 ---
 
 # Rounding Corners with Science and CSS Variables
