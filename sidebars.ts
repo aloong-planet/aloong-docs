@@ -25,6 +25,11 @@ const sidebars: SidebarsConfig = {
       id: 'github-actions',
       label: 'Github Actions',
     },
+    {
+      type: 'doc',
+      id: 'tailwind-v4',
+      label: 'Tailwindcss v4',
+    },
   ],
 
   // But you can create a sidebar manually
