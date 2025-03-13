@@ -273,6 +273,73 @@ export default function TestComponent() {
 
 If your styles are applied correctly, your Tailwind CSS v4 configuration is working properly.
 
+## Setting Up Prettier for Tailwind CSS
+
+To ensure consistent class ordering in your Tailwind CSS code, you can install and configure the `prettier-plugin-tailwindcss` plugin. This plugin automatically sorts your Tailwind CSS classes according to the recommended class order, making your code more readable and maintainable.
+
+### Installation
+
+Install Prettier and the Tailwind CSS plugin:
+
+```bash
+npm install -D prettier prettier-plugin-tailwindcss
+```
+
+### Configuration
+
+Create a `.prettierrc` file in your project root with the following configuration:
+
+```json
+{
+  "trailingComma": "es5",
+  "semi": true,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "printWidth": 100,
+  "tailwindFunctions": ["clsx"],
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
+```
+
+Here's an explanation of each parameter in the configuration:
+
+- `trailingComma`: Adds trailing commas where valid in ES5 (arrays, objects)
+- `semi`: Adds semicolons at the end of statements
+- `tabWidth`: Sets the number of spaces per indentation level
+- `singleQuote`: Uses single quotes instead of double quotes
+- `jsxSingleQuote`: Uses single quotes in JSX
+- `printWidth`: Sets the line length where Prettier will try to wrap
+- `tailwindFunctions`: Specifies functions where Tailwind classes should be sorted (like `clsx()`)
+- `plugins`: Enables the Tailwind CSS plugin for Prettier
+
+### Adding NPM Scripts
+
+Add these scripts to your `package.json` for easier formatting:
+
+```json
+{
+  "scripts": {
+    "format": "prettier --write --ignore-path .gitignore .",
+    "check": "prettier --check --ignore-path .gitignore ."
+  }
+}
+```
+
+### Usage
+
+You can now run the following commands:
+
+```bash
+# Format all files
+npm run format
+
+# Check if files are formatted correctly
+npm run check
+```
+
+This will ensure your Tailwind CSS classes are consistently ordered, making your code more readable and maintainable.
+
 ## Conclusion
 
 Tailwind CSS v4 offers a more powerful and efficient approach to styling your Next.js applications. The simplified import system and improved performance make it an excellent choice for modern web development.
