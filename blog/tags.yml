@@ -1,19 +1,24 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+llm:
+  label: LLM
+  permalink: /llm
+  description: Large Language Models
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+mcp:
+  label: MCP
+  permalink: /mcp
+  description: Model Context Protocol
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+deepseek:
+  label: DeepSeek
+  permalink: /deepseek
+  description: DeepSeek
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+python:
+  label: Python
+  permalink: /python
+  description: Python
+
+javascript:
+  label: JavaScript
+  permalink: /javascript
+  description: JavaScript

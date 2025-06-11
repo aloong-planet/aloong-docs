@@ -1,0 +1,56 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'actorBkg': '#ECECFF',
+    'actorBorder': '#D5D5FF',
+    'actorTextColor': '#000000',
+    'activationBkgColor': '#bbdefb',
+    'activationBorderColor': '#90caf9',
+    'sequenceNumberColor': '#1976d2',
+    'sectionBkgColor': '#f5f5f5',
+    'altColor': '#fafafa',
+    'gridColor': '#e0e0e0',
+    'lineColor': '#757575',
+    'signalColor': '#424242',
+    'signalTextColor': '#212121',
+    'labelBoxBkgColor': '#bbdefb',
+    'labelBoxBorderColor': '#90caf9',
+    'labelTextColor': '#1976d2',
+    'loopTextColor': '#aaaaa',
+     'noteBkgColor': '#FFF6B8',
+     'noteBorderColor': '#E4C800',
+     'noteTextColor': '#5C5100'
+  },
+  'sequence': {
+    'height': 50
+  }
+}}%%
+sequenceDiagram
+    participant U as 用户
+    participant C as MCP Client
+    participant L as LLM (DeepSeek)
+    participant S as MCP Servers
+
+    Note over C,S: 初始化阶段
+    C->>S: 1. 建立连接并获取tools
+    S-->>C: 2. 返回可用tools列表
+    
+    Note over U,S: 交互阶段
+    U->>C: 1. 输入prompt
+    C->>L: 2. 发送prompt + tools列表
+    L->>C: 3. 判断是否需要调用工具并返回
+
+        alt 需要调用工具
+            rect rgb(240, 255, 240)
+                L->>C: 3.1 返回需要调用的tools
+                C->>S: 4.1 调用MCP工具
+                S-->>C: 4.2 返回工具执行结果
+                C->>L: 4.3 将结果发送给LLM
+            end
+        else 不需要工具或已完成工具调用
+            rect rgb(255, 240, 240)
+                L->>C: 5 返回最终答案
+            end
+        end
+
+    C->>U: 6. 返回处理后的结果
