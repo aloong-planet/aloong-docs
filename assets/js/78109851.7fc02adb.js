@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkaloong_docs=self.webpackChunkaloong_docs||[]).push([[220],{72938:(o,s,a)=>{a.r(s),a.d(s,{default:()=>d});a(96540);var c=a(56347),n=a(74848);function d(){return(0,n.jsx)(c.rd,{to:"/aloong-docs/api-docs/fastapi"})}}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkaloong_docs=self.webpackChunkaloong_docs||[]).push([[472],{55513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Creating MCP Client with DeepSeek","permalink":"/aloong-docs/blog/creating-mcp-client-with-deepseek","unlisted":false,"date":"2025-06-10T00:00:00.000Z"}]}')}}]);

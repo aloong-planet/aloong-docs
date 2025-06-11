@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkaloong_docs=self.webpackChunkaloong_docs||[]).push([[476],{27750:e=>{e.exports=JSON.parse('{"tags":[{"label":"MCP","permalink":"/aloong-docs/blog/tags/mcp","description":"Model Context Protocol","count":1},{"label":"DeepSeek","permalink":"/aloong-docs/blog/tags/deepseek","description":"DeepSeek","count":1}]}')}}]);

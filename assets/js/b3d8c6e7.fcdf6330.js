@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkaloong_docs=self.webpackChunkaloong_docs||[]).push([[661],{57353:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/aloong-docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
